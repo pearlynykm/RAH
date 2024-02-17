@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset= "UTF-8">
+<meta name="viewpoint" content ="width=device-width, initial-scale=1.0">
+<script src="js/product.js"></script>
+<title>Insert Restaurant</title>
+</head>
+<body onload ="loadProductDetail()">
+<form method="post">
+    <h1>Post Product</h1>
+    <label for ="picture">Image URL:</label><br>
+    <input type ="text" id="picture" name="picture"><br>
+
+    <label for ="name">Name:</label><br>
+    <input type ="text" id="name" name="name" required><br>
+
+    <label for ="price">Price:</label><br>
+    <input type ="text" id="price" name="price" required><br>
+    
+    <label for ="description">Description:</label><br>
+    <input type ="text" id="description" name="description" rows="4" cols="50" required><br>
+
+    <label for ="category">Catergory ID (1 = casual, 2 = formal):</label><br>
+    <input type ="text" id="category_id" name="category_id" required><br>
+
+    <input type ="button" onclick="addProductData()" value ="Submit">
+</form>
+</body>
